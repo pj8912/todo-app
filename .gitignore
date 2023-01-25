@@ -1,0 +1,19 @@
+# .gitignore
+
+# Flask-specific files
+instance/
+.env
+
+# Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# SQLite database
+todo.db
+
+# Logs
+logs/
+
+#venv
+myenv/
