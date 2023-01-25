@@ -1,0 +1,43 @@
+
+
+
+<form action="/addTask" method="GET">
+	<input type="text" name="task" placeholder="Task">
+	<button type="submit">Add Task</button>
+</form>
+
+<div>
+
+    <h3>Todo Tasks</h3>
+    <br>
+    {% if tasks|length < 1 %}
+    <p>No tasks to display</p>
+    {% else %}
+    <table>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task[1] }} [<a href="/move-to-done/{{ task[0] }}/{{ task[1] }}">done</a> | <a href="/deleteTask/{{ task[0] }}">delete</a>] </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+    
+</div>
+<hr>
+
+<div>
+    <h3>Tasks Completed</h3>
+    {% if done|length < 1 %}
+    <p>No tasks completed</p>
+    {% else %}
+        <table>
+            {% for task in done %}
+        <tr>
+            <td>
+                {{ task[1] }} [<a href="/delete-completed/{{ task[0] }}">delete</a>]
+            </td>
+        </tr>
+        {% endfor %}
+        </table>
+        {% endif %}
+</div>
