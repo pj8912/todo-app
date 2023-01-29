@@ -14,11 +14,11 @@ This is a simple Todo application built using Python and SQLite. The application
 
 2. Install the required packages
     
-    pip install -r requirements.txt
+    `pip install -r requirements.txt`
 
 3. Create the database
     
-    python db_create.py
+    `python db_create.py`
 
 ## Usage
 1. Start the development server
