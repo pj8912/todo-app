@@ -10,7 +10,7 @@ This is a simple Todo application built using Python and SQLite. The application
 ## Installation
 1. Clone the repository git clone 
 
-    https://github.com/pj8912/todo-app.git
+    `https://github.com/pj8912/todo-app.git`
 
 2. Install the required packages
     
