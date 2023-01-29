@@ -8,13 +8,16 @@ This is a simple Todo application built using Python and SQLite. The application
 - SQLite3
 
 ## Installation
-1. Clone the repository    
-    git clone https://github.com/pj8912/todo-app.git
+1. Clone the repository git clone 
+
+    https://github.com/pj8912/todo-app.git
 
 2. Install the required packages
+    
     pip install -r requirements.txt
 
 3. Create the database
+    
     python db_create.py
 
 ## Usage
